@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
+import { ScrollShowcase } from "@/components/ScrollShowcase";
 import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { FeaturesTabs } from "@/components/FeaturesTabs";
@@ -25,6 +26,7 @@ function App() {
       <main id="conteudo">
         <Hero />
         <Marquee />
+        <ScrollShowcase />
         <ProblemSection />
         <SolutionSection />
         <FeaturesTabs />
