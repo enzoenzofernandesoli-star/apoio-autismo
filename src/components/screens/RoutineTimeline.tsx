@@ -33,7 +33,7 @@ function RoutineTimeline() {
               item.current ? "bg-primary-blue text-text-light" : "bg-white"
             }`}
           >
-            <span className={`text-xs font-bold ${item.current ? "text-text-light/80" : "text-text-muted"}`}>
+            <span className={`font-mono text-xs font-bold ${item.current ? "text-text-light/80" : "text-text-muted"}`}>
               {item.time}
             </span>
             <span className={`flex-1 text-sm font-semibold ${item.current ? "text-text-light" : "text-text-dark"}`}>

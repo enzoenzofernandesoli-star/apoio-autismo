@@ -34,8 +34,8 @@ function PricingSection() {
         <div className="mt-5 text-center">
           <p className="font-heading text-lg font-bold text-text-dark">Plano Família</p>
           <p className="mt-2 flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-black text-text-dark">R$ 49,99</span>
-            <span className="text-sm font-semibold text-text-muted">/mês</span>
+            <span className="font-mono text-5xl font-black text-text-dark">R$ 49,99</span>
+            <span className="font-mono text-sm font-semibold text-text-muted">/mês</span>
           </p>
           <p className="mt-1 text-xs text-text-muted">após o período de teste gratuito</p>
         </div>

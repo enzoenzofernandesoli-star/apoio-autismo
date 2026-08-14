@@ -1,15 +1,20 @@
 import { cn } from "@/lib/utils";
+import { StatusDot } from "@/components/StatusDot";
 
 function PhoneMockup({
   children,
   className,
   frameClassName,
   dark = false,
+  statusLabel = "ONLINE",
+  statusTone = "light",
 }: {
   children: React.ReactNode;
   className?: string;
   frameClassName?: string;
   dark?: boolean;
+  statusLabel?: string | null;
+  statusTone?: "light" | "dark";
 }) {
   return (
     <div
@@ -19,6 +24,11 @@ function PhoneMockup({
         frameClassName,
       )}
     >
+      {statusLabel && (
+        <div className="absolute -top-6 right-1 z-10" aria-hidden="true">
+          <StatusDot label={statusLabel} tone={statusTone} />
+        </div>
+      )}
       <div
         className={cn(
           "absolute left-1/2 top-2 z-10 h-5 w-24 -translate-x-1/2 rounded-full",

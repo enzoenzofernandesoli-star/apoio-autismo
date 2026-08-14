@@ -1,4 +1,5 @@
 import { ScanEye, Volume2, Lightbulb, Users, DoorOpen } from "lucide-react";
+import { StatusDot } from "@/components/StatusDot";
 
 const SIGNALS = [
   { icon: Volume2, label: "Nível de ruído elevado" },
@@ -16,10 +17,14 @@ function EnvironmentScan() {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-3 bg-bg-dark-deep py-8">
-        <div className="relative flex size-20 items-center justify-center rounded-2xl border-2 border-accent-cyan/50">
+        <div className="relative flex size-20 items-center justify-center overflow-hidden rounded-2xl border-2 border-accent-cyan/50">
           <ScanEye className="size-8 text-accent-cyan" aria-hidden="true" />
+          <div
+            className="absolute inset-x-0 h-8 bg-gradient-to-b from-transparent via-accent-cyan/40 to-transparent animate-scan"
+            aria-hidden="true"
+          />
         </div>
-        <p className="text-xs font-semibold text-text-light/70">Escaneando estímulos do ambiente…</p>
+        <StatusDot label="Escaneando ambiente" tone="light" />
       </div>
 
       <div className="flex-1 space-y-2.5 overflow-y-auto bg-bg-light p-4">

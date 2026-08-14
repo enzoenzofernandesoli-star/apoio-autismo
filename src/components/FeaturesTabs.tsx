@@ -65,7 +65,7 @@ function FeaturesTabs() {
                   </div>
 
                   <div className="mx-auto">
-                    <PhoneMockup>
+                    <PhoneMockup statusTone="dark" statusLabel={`MÓDULO · ${cat.tabLabel.toUpperCase()}`}>
                       <cat.Screen />
                     </PhoneMockup>
                   </div>

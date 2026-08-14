@@ -55,7 +55,7 @@ function SolutionSection() {
           transition={{ duration: 0.6 }}
           className="mx-auto"
         >
-          <PhoneMockup>
+          <PhoneMockup statusTone="dark">
             <div className="flex items-center justify-between bg-bg-dark px-5 py-4">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-accent-cyan">
@@ -76,7 +76,7 @@ function SolutionSection() {
                   key={item.time}
                   className="flex items-center gap-3 rounded-xl bg-white p-3 shadow-sm"
                 >
-                  <span className="text-xs font-bold text-text-muted">{item.time}</span>
+                  <span className="font-mono text-xs font-bold text-text-muted">{item.time}</span>
                   <span className="flex-1 text-sm font-semibold text-text-dark">{item.label}</span>
                   <span
                     className={`size-2.5 rounded-full ${item.done ? "bg-primary-blue" : "bg-border"}`}
