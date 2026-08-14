@@ -33,12 +33,7 @@ function Header() {
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#hero" className="flex items-center gap-2.5">
-          <span
-            className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-blue to-accent-purple text-sm font-black text-text-light"
-            aria-hidden="true"
-          >
-            AA
-          </span>
+          <img src="/logo.png" alt="" className="size-9 rounded-xl bg-white object-contain p-1" />
           <span className="font-heading text-base font-bold text-text-light">
             Apoio ao Autismo
           </span>

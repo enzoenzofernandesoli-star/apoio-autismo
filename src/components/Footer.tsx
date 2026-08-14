@@ -20,12 +20,7 @@ function Footer() {
         <div className="grid gap-10 border-b border-white/10 pb-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span
-                className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-blue to-accent-purple text-sm font-black"
-                aria-hidden="true"
-              >
-                AA
-              </span>
+              <img src="/logo.png" alt="" className="size-9 rounded-xl bg-white object-contain p-1" />
               <span className="font-heading text-base font-bold">Apoio ao Autismo</span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-light/60">
