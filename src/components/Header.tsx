@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
-import { GlowButton } from "@/components/ui/moving-border";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 function Header() {
@@ -52,9 +52,9 @@ function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <GlowButton as="a" href="#planos" className="h-10 px-5 text-xs lg:h-10 lg:px-5 lg:text-xs">
-            Quero testar grátis
-          </GlowButton>
+          <Button asChild size="sm">
+            <a href="#planos">Quero testar grátis</a>
+          </Button>
         </div>
 
         <button
@@ -86,15 +86,9 @@ function Header() {
               </li>
             ))}
           </ul>
-          <GlowButton
-            as="a"
-            href="#planos"
-            containerClassName="mt-4 w-full"
-            className="w-full"
-            onClick={() => setMenuOpen(false)}
-          >
-            Quero testar grátis
-          </GlowButton>
+          <Button asChild className="mt-4 w-full" onClick={() => setMenuOpen(false)}>
+            <a href="#planos">Quero testar grátis</a>
+          </Button>
         </nav>
       )}
     </header>

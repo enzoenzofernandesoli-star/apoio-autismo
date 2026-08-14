@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { GlowButton } from "@/components/ui/moving-border";
 
 function CTA() {
   return (
@@ -17,9 +16,9 @@ function CTA() {
           seu lado.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <GlowButton as="a" href="#planos">
-            Quero começar meu teste grátis
-          </GlowButton>
+          <Button size="lg" asChild>
+            <a href="#planos">Quero começar meu teste grátis</a>
+          </Button>
           <Button size="lg" variant="outlineLight" asChild>
             <a href="#interesse">Quero acompanhar o projeto</a>
           </Button>

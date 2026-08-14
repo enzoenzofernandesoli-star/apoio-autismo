@@ -1,6 +1,6 @@
 import { CircleCheck, Sparkles } from "lucide-react";
 import { Eyebrow } from "@/components/Eyebrow";
-import { GlowButton } from "@/components/ui/moving-border";
+import { Button } from "@/components/ui/button";
 
 const INCLUDED = [
   "Comunicação, rotina, Modo Calma e missões",
@@ -49,9 +49,9 @@ function PricingSection() {
           ))}
         </ul>
 
-        <GlowButton as="a" href="#interesse" containerClassName="mt-8 w-full" className="w-full">
-          Quero começar meu teste grátis
-        </GlowButton>
+        <Button size="lg" className="mt-8 w-full" asChild>
+          <a href="#interesse">Quero começar meu teste grátis</a>
+        </Button>
 
         <p className="mt-4 text-center text-xs leading-relaxed text-text-muted">
           O aplicativo está em fase de pré-lançamento — as assinaturas ainda não estão abertas.

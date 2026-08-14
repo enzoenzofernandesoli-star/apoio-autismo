@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion
 import { MessageCircle, Wind, CalendarCheck, Trophy, Volume2, Droplet, Apple, BedDouble, HandHelping } from "lucide-react";
 import { Eyebrow } from "@/components/Eyebrow";
 import { Button } from "@/components/ui/button";
-import { GlowButton } from "@/components/ui/moving-border";
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 
@@ -62,9 +61,9 @@ function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <GlowButton as="a" href="#planos">
-              Quero testar grátis
-            </GlowButton>
+            <Button size="lg" asChild>
+              <a href="#planos">Quero testar grátis</a>
+            </Button>
             <Button size="lg" variant="outlineLight" asChild>
               <a href="#como-funciona">Ver como funciona</a>
             </Button>
