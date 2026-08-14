@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -31,7 +31,8 @@ function Carousel({
   children: React.ReactNode;
   options?: Parameters<typeof useEmblaCarousel>[0];
 }) {
-  const [emblaRef, api] = useEmblaCarousel({ loop: false, align: "start", ...options });
+  const emblaOptions = useMemo(() => ({ loop: false, align: "start" as const, ...options }), [options]);
+  const [emblaRef, api] = useEmblaCarousel(emblaOptions);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
 
@@ -67,7 +68,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
-  return <div className={cn("min-w-0 shrink-0 grow-0 basis-[85%] sm:basis-[45%] lg:basis-[30%]", className)} {...props} />;
+  return <div className={cn("min-w-0 shrink-0 grow-0 basis-4/5 sm:basis-1/2 lg:basis-1/3", className)} {...props} />;
 }
 
 function CarouselPrevious({ className }: { className?: string }) {

@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { ScrollShowcase } from "@/components/ScrollShowcase";
+import { AppScreensCarousel } from "@/components/AppScreensCarousel";
 import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { FeaturesTabs } from "@/components/FeaturesTabs";
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <Marquee />
         <ScrollShowcase />
+        <AppScreensCarousel />
         <ProblemSection />
         <SolutionSection />
         <FeaturesTabs />
