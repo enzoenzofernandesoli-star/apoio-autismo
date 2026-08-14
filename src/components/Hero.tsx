@@ -4,6 +4,7 @@ import { MessageCircle, Wind, CalendarCheck, Trophy, Volume2, Droplet, Apple, Be
 import { Eyebrow } from "@/components/Eyebrow";
 import { Button } from "@/components/ui/button";
 import { PhoneMockup } from "@/components/PhoneMockup";
+import { AnimatedGroup } from "@/components/ui/animated-group";
 
 const FLOATING_ITEMS = [
   { icon: MessageCircle, label: "Comunicação", className: "-left-6 top-16 lg:-left-14" },
@@ -46,11 +47,7 @@ function Hero() {
       </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-2 lg:gap-10 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
+        <AnimatedGroup preset="blur-slide">
           <Eyebrow tone="light">Tecnologia para mais autonomia</Eyebrow>
           <h1 className="mt-5 text-4xl font-black leading-[1.08] text-text-light sm:text-5xl lg:text-[3.4rem]">
             Mais comunicação. Mais previsibilidade.{" "}
@@ -75,7 +72,7 @@ function Hero() {
           <p className="mt-8 text-sm font-medium text-text-light/50">
             Para pessoas autistas, famílias, escolas e profissionais.
           </p>
-        </motion.div>
+        </AnimatedGroup>
 
         <motion.div
           initial={{ opacity: 0, x: 32 }}
