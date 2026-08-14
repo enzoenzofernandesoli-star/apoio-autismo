@@ -11,6 +11,7 @@ import { ConnectionSection } from "@/components/ConnectionSection";
 import { DifferentiatorSection } from "@/components/DifferentiatorSection";
 import { AudienceSection } from "@/components/AudienceSection";
 import { SecuritySection } from "@/components/SecuritySection";
+import { PricingSection } from "@/components/PricingSection";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
 import { InterestForm } from "@/components/InterestForm";
@@ -36,6 +37,7 @@ function App() {
         <DifferentiatorSection />
         <AudienceSection />
         <SecuritySection />
+        <PricingSection />
         <FAQ />
         <CTA />
         <InterestForm />

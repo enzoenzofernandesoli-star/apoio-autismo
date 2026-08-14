@@ -17,7 +17,7 @@ function CTA() {
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Button size="lg" asChild>
-            <a href="#funcionalidades">Quero conhecer o aplicativo</a>
+            <a href="#planos">Quero começar meu teste grátis</a>
           </Button>
           <Button size="lg" variant="outlineLight" asChild>
             <a href="#interesse">Quero acompanhar o projeto</a>

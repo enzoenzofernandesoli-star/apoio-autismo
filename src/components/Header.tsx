@@ -53,7 +53,7 @@ function Header() {
 
         <div className="hidden lg:block">
           <Button asChild size="sm">
-            <a href="#funcionalidades">Conhecer o aplicativo</a>
+            <a href="#planos">Quero testar grátis</a>
           </Button>
         </div>
 
@@ -87,7 +87,7 @@ function Header() {
             ))}
           </ul>
           <Button asChild className="mt-4 w-full" onClick={() => setMenuOpen(false)}>
-            <a href="#funcionalidades">Conhecer o aplicativo</a>
+            <a href="#planos">Quero testar grátis</a>
           </Button>
         </nav>
       )}

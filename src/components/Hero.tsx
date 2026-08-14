@@ -62,7 +62,7 @@ function Hero() {
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Button size="lg" asChild>
-              <a href="#funcionalidades">Conhecer o aplicativo</a>
+              <a href="#planos">Quero testar grátis</a>
             </Button>
             <Button size="lg" variant="outlineLight" asChild>
               <a href="#como-funciona">Ver como funciona</a>

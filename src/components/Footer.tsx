@@ -5,6 +5,7 @@ const PRODUCT_LINKS = [
   { label: "Para famílias", href: "#funcionalidades" },
   { label: "Para escolas", href: "#funcionalidades" },
   { label: "Para profissionais", href: "#funcionalidades" },
+  { label: "Planos", href: "#planos" },
   { label: "FAQ", href: "#faq" },
 ];
 
